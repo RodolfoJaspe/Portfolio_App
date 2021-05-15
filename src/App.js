@@ -10,13 +10,13 @@ function App() {
         <div className="App">
             <div className="App-body">
                 <header className="header">
-                    <h1>Rodolfo Jaspe</h1>
+                    
                     <div className="header-nav">
                         <Link to="/">Home</Link>
                         <Link to= "/projects">Projects</Link>
                         <Link to="/about">About Me</Link>
                     </div>
-               
+                    <h1>Rodolfo Jaspe</h1>
                 </header>
                 <main>
                     <Switch>

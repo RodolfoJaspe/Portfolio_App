@@ -1,12 +1,11 @@
-iframe {
+.projects iframe {
   width: 50vw;
   height: 50vw;
-  border-radius: 25vw;
+  border-radius: 5vw;
   border: none;
 }
 
 .projects {
-  border-top: 2px solid salmon;
   width: 80vw;
   display: flex;
   flex-direction: column;

@@ -2,18 +2,12 @@
   text-align: center;
   background: url("./Assets/background.jpg");
   background-size: cover;
-}
-
-h1 {
-  display: flex;
-  align-items: center;
-  text-align: left;
-  padding-left: 5vw;
-  background: rgba(128, 128, 128, 0.5);
-  height: 10vh;
+  margin-left: 0;
+  /* background-color: red; */
 }
 
 .App-body {
+  padding-top: 5vh;
   background-color: rgba(13, 16, 17, 0.9);
   min-height: 100vh;
   display: flex;
@@ -21,7 +15,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .header-nav {
@@ -31,11 +25,37 @@ h1 {
 }
 
 a {
-  color: gray;
+  color: rgba(255, 255, 255, 0.2);
   text-decoration: none;
 }
 
 a:hover {
-  color: gray;
+  color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
+}
+
+.h1-div {
+  background: rgba(128, 128, 128, 0.5);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-left: 5vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  height: 10vh;
+  margin: 5vh;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.right {
+  position: absolute;
+  transform: translateX(63vw);
+  transition: 2s;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.left {
+  position: absolute;
+  transform: translateX(5vw);
+  transition: 2s;
 }

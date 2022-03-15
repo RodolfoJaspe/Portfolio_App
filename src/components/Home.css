@@ -4,7 +4,7 @@ img {
   border-radius: 25vw;
   object-fit: cover;
   object-position: top;
-  border: 4vw solid rgba(0, 0, 0, 0.1);
+  border: 2vw solid rgba(18, 209, 34, 0.198);
   margin: 5vh;
   transition: 1s;
 }
@@ -41,19 +41,29 @@ img {
   border-radius: 1vw;
   border: none;
   -webkit-transform-origin-x: 11vw;
-  -webkit-transform-origin-y: 16vh;
+  -webkit-transform-origin-y: 10vw;
 }
 
 img:hover {
   transform: scale(1.1);
   transition: 0.5s;
-  border: 2vw solid rgba(0, 0, 0, 0.1);
+  border: 2vw solid rgba(36, 202, 50, 0.431);
+  box-shadow: 0vw 0vw 2vw rgba(36, 202, 50, 0.582);
+  cursor: pointer;
 }
 
 .img-div {
-  padding: 0.2vw;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+}
+
+.img-div2 {
+  padding: 1vw;
+  background-color: rgba(1, 0, 3, 0.397);
+  border-radius: 25vw;
+  /* -webkit-backdrop-filter: opacity(0.5); */
+  /* border: 2vw solid rgba(0, 0, 0, 1); */
 }
 .img-and-app-row {
   display: flex;

@@ -6,18 +6,6 @@ import Projects from "./components/Projects";
 import Home from "./components/Home";
 
 function App() {
-    const [h1Position, setH1position] = useState({ 
-        position: "initial"
-});
-    const moveH1 = () => {
-        if (h1Position.position === "initial") {
-            return setH1position({position: "right"})
-        } else if (h1Position.position === "left") {
-            return setH1position({position: "right"})
-        } else {
-            return setH1position({position: "left"})
-        }
-    }
     return (
         <div className="App">
             <div className="App-body">
@@ -28,9 +16,12 @@ function App() {
                         <Link to="/about">About Me</Link>
                     </div>
                     <div className="h1-div">
-                        <div onMouseEnter={moveH1} className={h1Position.position}>
-                            <h1>Rodolfo Jaspe</h1>
+                        <h1>RODOLFO JASPE</h1>
+                        <div style={{color:"red",marginLeft:"2vw",fontSize:"4rem"}}>
+                           <p>/</p> 
                         </div>
+                        
+                        <h2>Full Stack Web Developer</h2>
                     </div>
                 </header>
                 <main>

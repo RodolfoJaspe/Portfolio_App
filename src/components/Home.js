@@ -8,7 +8,9 @@ function Home () {
         <div className="home">
             <div className="img-and-app-row">
                 <div className="img-div">
-                    <img src= {bridge} alt="bridge" />
+                    <div className="img-div2" >
+                       <img src= {bridge} alt="bridge" /> 
+                    </div>
                 </div>
                 <div>
                     <div className="home-projects">

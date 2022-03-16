@@ -1,15 +1,19 @@
 import React from "react";
-import bridge from "../Assets/bridge.jpg";
+import { useHistory } from "react-router-dom";
+import headshot from "../Assets/headshot.jpeg";
 import "./Home.css"
 
 function Home () {
 
+    const history = useHistory()
     return (
         <div className="home">
             <div className="img-and-app-row">
                 <div className="img-div">
-                    <div className="img-div2" >
-                       <img src= {bridge} alt="bridge" /> 
+                    <div 
+                        className="img-div2"
+                        onClick={() => history.push('/about')} >
+                       <img src= {headshot} alt="bridge" /> 
                     </div>
                 </div>
                 <div>

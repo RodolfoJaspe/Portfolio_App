@@ -1,21 +1,19 @@
-img {
-  width: 25vw;
-  height: 25vw;
-  border-radius: 25vw;
+.img-div2 img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 20vw;
   object-fit: cover;
   object-position: top;
-  border: 2vw solid rgba(18, 209, 34, 0.198);
+  border: 0.5vw solid rgba(187, 108, 34, 0.822);
   margin: 5vh;
   transition: 1s;
 }
-
 .home {
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: space-evenly;
   padding-bottom: 5vh;
-  /* background: red; */
 }
 
 .home-projects {
@@ -24,7 +22,6 @@ img {
   justify-content: top;
   align-items: center;
   margin: 5vw;
-  /* background: blue; */
 }
 
 .home-projects iframe {
@@ -44,11 +41,11 @@ img {
   -webkit-transform-origin-y: 10vw;
 }
 
-img:hover {
+.img-div2 img:hover {
   transform: scale(1.1);
   transition: 0.5s;
-  border: 2vw solid rgba(36, 202, 50, 0.431);
-  box-shadow: 0vw 0vw 2vw rgba(36, 202, 50, 0.582);
+  border: 0.5vw solid rgba(187, 108, 34, 0.822);
+  box-shadow: 0vw 0vw 1vw rgb(187, 108, 34);
   cursor: pointer;
 }
 
@@ -62,12 +59,9 @@ img:hover {
   padding: 1vw;
   background-color: rgba(1, 0, 3, 0.397);
   border-radius: 25vw;
-  /* -webkit-backdrop-filter: opacity(0.5); */
-  /* border: 2vw solid rgba(0, 0, 0, 1); */
 }
 .img-and-app-row {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  /* background: red; */
 }

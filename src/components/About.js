@@ -5,7 +5,7 @@ import "./About.css"
 function About () {
     return (
         <div>
-            <div>
+            <div className="about-picture">
                 <img src={bridge} alt="bridge"/>
             </div>
             <div className="bio">

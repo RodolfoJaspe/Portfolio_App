@@ -1,11 +1,10 @@
 .App {
-  font-family: Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Geneva;
   text-align: center;
   background: url("./Assets/background.jpg");
   background-size: cover;
   background-position: center;
   margin-left: 0;
-  /* background-color: red; */
 }
 
 .App-body {
@@ -19,22 +18,28 @@
   font-size: calc(10px + 2vmin);
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+}
 .header-nav {
   display: flex;
   justify-content: space-evenly;
   width: 100vw;
+  margin-bottom: 10vh;
 }
 
 a {
-  color: rgba(255, 255, 255, 0.2);
-  text-decoration: none;
-}
-
-a:hover {
-  color: rgba(255, 255, 255, 0.813);
-  -webkit-transform: scale(1.5);
+  color: rgba(187, 108, 34, 0.822);
   text-decoration: none;
   transition: 1s;
+}
+
+h1 {
+  display: flex;
+  flex-direction: row;
+  font-size: 4vw;
+  color: rgba(255, 255, 255, 0.822);
 }
 
 .h1-div {
@@ -45,14 +50,134 @@ a:hover {
   padding: 1vh 2vw;
   height: 20vh;
   margin: 8vh 0;
+  /* background-color: lightseagreen; */
 }
 
-h1 {
-  font-size: 4rem;
-  color: rgba(255, 255, 255, 0.815);
+.name-title {
+  display: flex;
+  align-items: center;
 }
 
-h2 {
-  font-size: 2rem;
-  color: brown;
+.name h1 {
+  display: flex;
+  flex-direction: row;
+  width: 27vw;
+}
+.title h2 {
+  color: rgba(53, 21, 0, 0.411);
+  display: flex;
+  flex-direction: row;
+  font-size: 2vw;
+  width: 27vw;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  opacity: 0.5;
+  margin-top: 20vh;
+  transition: 2s;
+  /* background-color: yellow; */
+}
+
+.skills-outer {
+  padding-left: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+a:hover {
+  color: rgba(255, 249, 242, 0.813);
+  -webkit-transform: scale(1.5);
+  text-decoration: none;
+  transition: 1s;
+}
+
+.title h2:hover {
+  color: rgba(83, 149, 211, 0.753);
+  font-size: 2.1vw;
+  transition: 1s;
+  text-decoration: underline;
+}
+
+.skills-container:hover h2 {
+  color: rgb(109, 0, 160);
+  transition: 1s;
+}
+.skills-container h2 {
+  transition: 1s;
+}
+
+.skills-inner p {
+  display: inline-block;
+  margin: 0;
+  transition: 0.5s;
+}
+
+.skills-inner h4 {
+  display: inline-block;
+  margin: 0;
+  transition: 0.5s;
+}
+
+.skills-inner:hover {
+  color: rgba(184, 63, 27, 0.5);
+  transition: 0.5s;
+}
+
+.skills-inner {
+  transition: 0.5s;
+}
+
+.skills-inner:hover .skills-title {
+  color: rgb(0, 255, 255);
+  transition: 0.5s;
+}
+
+.skills-inner .skills-title {
+  transition: 0.5s;
+}
+
+.skills-inner:hover h4 {
+  color: rgb(255, 255, 0);
+  transition: 0.5;
+}
+
+.skills-inner p:hover {
+  color: rgb(255, 92, 43);
+  transition: 0.5s;
+}
+
+.skills-title {
+  display: inline-block;
+}
+
+h5 {
+  display: inline-block;
+  color: rgb(221, 221, 221);
+  margin: 0;
+}
+
+.skills-container {
+  cursor: default;
+}
+
+.linkedin-icon {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  padding-right: 3vw;
+}
+
+.linkedin-icon img {
+  width: 5vw;
+  transition: 1s;
+}
+
+.linkedin-icon img:hover {
+  width: 6vw;
+  transition: 1s;
+  cursor: pointer;
 }

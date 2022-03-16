@@ -27,13 +27,13 @@ function App() {
                     <div className="h1-div">
                         <div className='name-title'>
                             <div className='name'>
-                                <h1><>Rodolfo </><>Jaspe</></h1>
+                                <h1><b><>Rodolfo </><>Jaspe</></b></h1>
                             </div>
                             <div style={{color:"red",marginLeft:"2vw",fontSize:"6vw"}}>
                                 /
                             </div>
                             <div className='title' onClick={() => showSkills()}>
-                                <h2><>Full </><>Stack </><>Web </><>Developer</></h2>
+                                <h2><b><>Full </><>Stack </><>Web </><>Developer</></b></h2>
                             </div>  
                         </div>
                         {skillsState? <FadeIn transitionDuration="1000" className='skills-container'>

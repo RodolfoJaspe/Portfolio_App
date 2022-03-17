@@ -4,7 +4,7 @@ import "./About.css"
 
 function About () {
     return (
-        <div>
+        <div className='about-container'>
             <div className="about-picture">
                 <img src={bridge} alt="bridge"/>
             </div>

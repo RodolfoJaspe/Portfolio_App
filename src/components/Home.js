@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import headshot from "../Assets/headshot.jpeg";
+import headshot from "../Assets/2.0.jpg";
 import "./Home.css"
 
 function Home () {
@@ -16,17 +16,17 @@ function Home () {
                        <img src= {headshot} alt="bridge" /> 
                     </div>
                 </div>
-                <div>
+                <div className="projects-container">
                     <div className="home-projects">
-                    <h3>
-                        <a href="https://hilites.netlify.app/">HiLites App</a>
-                    </h3>
-                    <iframe src ="https://hilites.netlify.app/" title="latest soccer highlights"></iframe>
-                </div>
-                <div className="home-projects">
-                    <h3><a href="https://toodue.netlify.app/">TooDue App</a></h3>
-                    <iframe src ="https://toodue.netlify.app/" title="latest soccer highlights"></iframe>         
-                </div>
+                        <h3>
+                            <a href="https://hilites.netlify.app/">HiLites App</a>
+                        </h3>
+                        <iframe src ="https://hilites.netlify.app/" title="latest soccer highlights"></iframe>
+                    </div>
+                    <div className="home-projects">
+                        <h3><a href="https://toodue.netlify.app/">TooDue App</a></h3>
+                        <iframe src ="https://toodue.netlify.app/" title="latest soccer highlights"></iframe>         
+                    </div>
                 </div>
                 
             </div>      

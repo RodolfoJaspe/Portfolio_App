@@ -1,11 +1,9 @@
-import React, {useState} from 'react';
-import {Route, Link, Switch} from "react-router-dom";
+import React from 'react';
+import {Route, Switch} from "react-router-dom";
 import './App.css';
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Home from "./components/Home";
-import FadeIn from 'react-fade-in';
-import linkedIn from './Assets/linkedin.png'
 import Header from './components/Header';
 
 function App() {

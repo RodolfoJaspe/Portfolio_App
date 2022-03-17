@@ -1,14 +1,19 @@
 import React from "react";
+import { connect } from "react-redux";
 import bridge from "../Assets/bridge.jpg";
-import "./About.css"
+import "./About.css";
+import FadeIn from 'react-fade-in';
 
-function About () {
+
+function About ({skillsState}) {
     return (
         <div className='about-container'>
-            <div className="about-picture">
+            <div 
+                className="about-picture"
+                style={{justifyContent:skillsState?"flex-start":"center"}}>
                 <img src={bridge} alt="bridge"/>
             </div>
-            <div className="bio">
+            <div className="bio">   
                 <p>
                     I am a full stack web developer mainly inclined towards front-end development. My specialties include Javascript, React, Redux, Node, Express, HTML, and CSS. 
                 </p>
@@ -23,4 +28,10 @@ function About () {
     )
 }
 
-export default About
+const mapStateToProps = (state) => {
+    return {
+        skillsState: state.skillsState
+    }
+}
+
+export default connect(mapStateToProps,{})(About)

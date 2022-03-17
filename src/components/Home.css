@@ -1,6 +1,12 @@
-.img-div2 img {
-  width: 20vw;
-  height: 20vw;
+.img-div {
+  display: flex;
+  width: 70vw;
+  /* background: blue; */
+}
+
+.img-div img {
+  width: 25vw;
+  height: 25vw;
   border-radius: 2vw;
   object-fit: cover;
   object-position: top;
@@ -45,20 +51,6 @@
   transition: 1.5s;
   border-radius: 2vw;
   border: none;
-}
-
-.img-div2 img:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-  border: 0.5vw solid rgba(187, 108, 34, 0.822);
-  box-shadow: 0vw 0vw 1vw rgb(187, 108, 34);
-  cursor: pointer;
-}
-
-.img-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
 }
 
 .img-and-app-row {

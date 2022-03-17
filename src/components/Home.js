@@ -1,20 +1,20 @@
 import React from "react";
+import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
 import headshot from "../Assets/2.0.jpg";
 import "./Home.css"
 
-function Home () {
-
+function Home ({skillsState}) {
+console.log(skillsState)
     const history = useHistory()
     return (
         <div className="home">
             <div className="img-and-app-row">
-                <div className="img-div">
-                    <div 
-                        className="img-div2"
-                        onClick={() => history.push('/about')} >
+                <div 
+                    className="img-div" 
+                    style={{justifyContent:skillsState?"flex-start":"center"}}
+                    onClick={() => history.push('/about')}>
                        <img src= {headshot} alt="bridge" /> 
-                    </div>
                 </div>
                 <div className="projects-container">
                     <div className="home-projects">
@@ -34,4 +34,10 @@ function Home () {
     )
 }
 
-export default Home
+const mapStateToProps = (state) => {
+    return {
+        skillsState: state.skillsState
+    }
+}
+
+export default connect(mapStateToProps,{})(Home)

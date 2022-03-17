@@ -2,12 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Router} from "react-router-dom";
+import { applyMiddleware, createStore } from 'redux';
+import { Provider } from 'react-redux';
+import { reducer } from "./reducers";
+import thunk from 'redux-thunk';
+import logger from 'redux-logger';
+
+
+const store = createStore(reducer, applyMiddleware(logger, thunk))
 
 ReactDOM.render(
-  <Router>
+  <Provider store={store}>
     <App />
-  </Router>,
+  </Provider>,
   document.getElementById('root')
 );
 

@@ -3,14 +3,12 @@ import {Link} from "react-router-dom";
 import './Header.css';
 import FadeIn from 'react-fade-in';
 import linkedIn from '../Assets/linkedin.png'
+import { connect } from 'react-redux';
+import { showSkills } from '../actions'
 
-export default function Header() {
+function Header({skillsState, showSkills}) {
+    console.log("skillState:" + skillsState)
 
-    const [skillsState, setSkillsState] = useState(false)
-
-    const showSkills = () => {
-        setSkillsState(!skillsState)
-    }
     return (
         <header> 
             <div className="header-nav">
@@ -26,7 +24,7 @@ export default function Header() {
                     <div style={{color:"red",marginLeft:"2vw",fontSize:"6vw"}}>
                         /
                     </div>
-                    <div className='title' onClick={() => showSkills()}>
+                    <div className='title' onClick={()=>showSkills(skillsState)}>
                         <h2><b><>Full </><>Stack </><>Web </><>Developer</></b></h2>
                     </div>  
                 </div>
@@ -52,3 +50,11 @@ export default function Header() {
         </header>
     )
 }
+
+const mapStateToProps = (state) => {
+    return {
+        skillsState: state.skillsState
+    }
+}
+
+export default connect(mapStateToProps, {showSkills})(Header)

@@ -2,8 +2,6 @@ import React from "react";
 import { connect } from "react-redux";
 import bridge from "../Assets/bridge.jpg";
 import "./About.css";
-import FadeIn from 'react-fade-in';
-
 
 function About ({skillsState}) {
     return (

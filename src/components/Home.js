@@ -18,14 +18,12 @@ console.log(skillsState)
                 </div>
                 <div className="projects-container">
                     <div className="home-projects">
-                        <h3>
-                            <a href="https://hilites.netlify.app/">HiLites App</a>
-                        </h3>
                         <iframe src ="https://hilites.netlify.app/" title="latest soccer highlights"></iframe>
+                        <a href="https://hilites.netlify.app/">Highlights</a>
                     </div>
                     <div className="home-projects">
-                        <h3><a href="https://toodue.netlify.app/">TooDue App</a></h3>
-                        <iframe src ="https://toodue.netlify.app/" title="latest soccer highlights"></iframe>         
+                        <iframe src ="https://toodue.netlify.app/" title="latest soccer highlights"></iframe>
+                        <a href="https://toodue.netlify.app/">To do list</a>         
                     </div>
                 </div>
                 

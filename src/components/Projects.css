@@ -1,7 +1,7 @@
 .projects iframe {
   width: 50vw;
   height: 50vw;
-  border-radius: 5vw;
+  border-radius: 2vw;
   border: none;
 }
 
@@ -11,23 +11,31 @@
   align-items: center;
   /* background-color: blue; */
   width: 100vw;
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 
 .projects p {
   text-align: center;
   width: 50vw;
-  color: rgba(255, 249, 242, 0.876);
+  color: rgb(255, 240, 226);
   /* background-color: red; */
 }
 
 .projects-title {
   text-align: center;
-  font-size: 4vw;
-  color: rgba(255, 249, 242, 0.876);
+  font-size: 5vw;
+  color: rgb(175, 96, 28);
   /* background: purple; */
 }
 
-h3 {
-  text-decoration: underline;
+.projects a {
+  font-family: Rosebella;
+  font-size: 6vw;
+  color: rgb(255, 240, 226);
+  text-decoration: none;
+  text-shadow: 2px 2px rgb(187, 107, 33);
+}
+
+.projects h3 {
+  margin: 5vh;
 }

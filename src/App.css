@@ -16,3 +16,18 @@
   font-size: calc(10px + 2vmin);
   margin: 0;
 }
+
+@font-face {
+  font-family: "Rosebella";
+  src: url("./Assets/fonts/Rosebella/Rosebella-Regular.eot");
+  src: url("./Assets/fonts/Rosebella/Rosebella-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./Assets/fonts/Rosebella/Rosebella-Regular.woff2") format("woff2"),
+    url("./Assets/fonts/Rosebella/Rosebella-Regular.woff") format("woff"),
+    url("./Assets/fonts/Rosebella/Rosebella-Regular.ttf") format("truetype"),
+    url("./Assets/fonts/Rosebella/Rosebella-Regular.svg#Rosebella-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

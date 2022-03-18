@@ -11,6 +11,10 @@ function Header({skillsState, showSkills}) {
     return (
         <header> 
             <div className="header-nav">
+                <div className='linkedin-icon'>    
+                    <a href='https://www.linkedin.com/in/rodolfo-jaspe/'>   <img src={linkedIn} alt='linkedin-icon'/>     
+                    </a>
+                </div>
                 <Link to="/">Home</Link>
                 <Link to= "/projects">Projects</Link>
                 <Link to="/about">About Me</Link>
@@ -18,13 +22,13 @@ function Header({skillsState, showSkills}) {
             <div className="h1-div">
                 <div className='name-title'>
                     <div className='name'>
-                        <h1><b><>Rodolfo </><>Jaspe</></b></h1>
+                        <h1>Rodolfo Jaspe</h1>
                     </div>
                     <div style={{color:"red",marginLeft:"2vw",fontSize:"6vw"}}>
                         /
                     </div>
                     <div className='title' onClick={()=>showSkills(skillsState)}>
-                        <h2><b><>Full </><>Stack </><>Web </><>Developer</></b></h2>
+                        <h2>Full Stack Web Developer</h2>
                     </div>  
                 </div>
                 {skillsState? <FadeIn transitionDuration="1000" className='skills-container'>
@@ -39,12 +43,9 @@ function Header({skillsState, showSkills}) {
                         </div>
                     </div>
                     <h2>{'}'}</h2>
-                </FadeIn> : 
-                <div className='linkedin-icon'>
-                    <a href='https://www.linkedin.com/in/rodolfo-jaspe/'>
-                        <img src={linkedIn} alt='linkedin-icon'/> 
-                    </a>
-                </div>}
+                </FadeIn> : ""
+            }
+                
             </div>
         </header>
     )

@@ -11,8 +11,7 @@ console.log(skillsState)
         <div className="home">
             <div className="img-and-app-row">
                 <div 
-                    className="img-div" 
-                    style={{justifyContent:skillsState?"flex-start":"center"}}
+                    className={skillsState?"img-div-move":"img-div"} 
                     onClick={() => history.push('/about')}>
                        <img src= {headshot} alt="bridge" /> 
                 </div>
@@ -26,7 +25,6 @@ console.log(skillsState)
                         <a href="https://toodue.netlify.app/">To do list</a>         
                     </div>
                 </div>
-                
             </div>      
         </div>
     )

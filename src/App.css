@@ -31,3 +31,9 @@
   font-style: normal;
   font-display: swap;
 }
+
+@media (max-width: 500px) {
+  .App-body {
+    padding-top: 0;
+  }
+}

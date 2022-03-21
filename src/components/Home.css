@@ -18,7 +18,7 @@
   object-fit: cover;
   object-position: top;
   border: 0.4vw solid rgba(187, 108, 34, 0.822);
-  margin: 5vh;
+  margin-bottom: 5vh;
   transition: 1s;
 }
 
@@ -105,11 +105,11 @@
 
 @media (max-width: 1000px) {
   .home {
-    margin-top: 10vh;
+    margin-top: 15vh;
   }
   .img-div-move {
     margin-bottom: 10vh;
-    margin-top: 32vh;
+    margin-top: 40vh;
     justify-content: center;
   }
   .home-projects iframe {
@@ -121,16 +121,12 @@
   }
 }
 
-@media (max-width: 800px) {
-  .home {
-    margin-top: 0;
-  }
-}
-
 @media (max-width: 650px) {
+  .home {
+    margin-top: 10vh;
+  }
   .img-div-move {
     margin-bottom: 8vh;
-    margin-top: 25vh;
   }
 
   .home img {
@@ -143,6 +139,9 @@
 }
 
 @media (max-width: 500px) {
+  .home {
+    margin-top: 5vh;
+  }
   .home img {
     width: 40vw;
     height: 40vw;

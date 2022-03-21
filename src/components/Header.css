@@ -19,9 +19,9 @@ header {
 h1 {
   display: flex;
   flex-direction: row;
-  font-family: Rosebella, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: GoodTimes, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 8vw;
+  font-size: 4vw;
   color: rgb(255, 240, 226);
   text-shadow: 2px 2px rgb(187, 107, 33);
 }
@@ -42,11 +42,6 @@ h1 {
   /* background-color: blueviolet; */
 }
 
-.name h1 {
-  display: flex;
-  flex-direction: row;
-  width: 30vw;
-}
 .title h2 {
   color: rgba(156, 156, 156, 0.87);
   display: flex;
@@ -172,6 +167,7 @@ h1 {
   .h1-div {
     margin: 0;
     flex-direction: column;
+    height: 15vh;
   }
 
   .name-title {
@@ -187,6 +183,7 @@ h1 {
   }
 
   .name h1 {
+    font-size: 5vw;
     margin: 0;
     width: 26vw;
   }
@@ -200,13 +197,15 @@ h1 {
 
   .title h2 {
     justify-content: center;
+    color: rgba(83, 149, 211, 0.753);
     font-size: 3vw;
     width: 100%;
-    /* background-color: red; */
+    text-decoration: underline;
   }
 
   .title h2:hover {
-    font-size: 3.5vw;
+    color: rgba(83, 149, 211, 0.753);
+    font-size: 3vw;
   }
 
   .linkedin-icon img {
@@ -220,18 +219,32 @@ h1 {
   .skills-container {
     width: 100%;
   }
+  .skills-container h2 {
+    color: rgb(109, 0, 160);
+  }
+  .skills-inner .skills-title {
+    color: rgb(0, 255, 255);
+  }
+  .skills-inner h4 {
+    color: rgb(255, 255, 0);
+  }
+  .skills-inner p {
+    color: rgba(255, 93, 43, 0.842);
+  }
+}
+
+@media (max-width: 800px) {
+  .name h1 {
+    font-size: 7vw;
+    width: 100%;
+    /* background-color: green; */
+  }
 }
 
 @media (max-width: 500px) {
   .h1-div {
-    height: 5vh;
+    height: 15vh;
     /* background-color: blue; */
-  }
-
-  .name h1 {
-    font-size: 14vw;
-    width: 100%;
-    /* background-color: green; */
   }
 
   .title h2 {

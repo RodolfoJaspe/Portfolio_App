@@ -7,7 +7,6 @@ header {
   justify-content: space-evenly;
   width: 100vw;
   font-size: 2vw;
-  /* margin-bottom: 10vh; */
   /* background: lightgoldenrodyellow; */
 }
 
@@ -32,9 +31,9 @@ h1 {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
-  padding: 1vh 2vw;
-  height: 20vh;
-  margin: 8vh 0;
+  padding: 1vw 2vw;
+  height: 10vw;
+  margin: 4vw 0;
   /* background-color: lightseagreen; */
 }
 
@@ -160,19 +159,20 @@ h1 {
 }
 
 @media (max-width: 1000px) {
-  header {
-    margin-top: 2vh;
-  }
   .header-nav {
-    margin-bottom: 5vh;
-  }
-  .header-nav {
+    margin-top: 0;
+    margin-bottom: 4vw;
     font-size: 3vw;
+  }
+  .header-nav a:hover {
+    color: rgba(187, 107, 33, 0.856);
+    -webkit-transform: scale(1);
+    text-decoration: none;
   }
   .h1-div {
     margin: 0;
     flex-direction: column;
-    height: 15vh;
+    height: 10vw;
   }
 
   .name-title {
@@ -239,22 +239,24 @@ h1 {
 }
 
 @media (max-width: 800px) {
+  .h1-div {
+    height: 20vw;
+    /* background-color: blue; */
+  }
   .name h1 {
     font-size: 7vw;
     width: 100%;
     /* background-color: green; */
   }
-  /* .header-nav {
-    font-size: 4vw;
-  } */
 }
 
 @media (max-width: 500px) {
   .header-nav {
     font-size: 4vw;
+    margin-top: 4vw;
   }
   .h1-div {
-    height: 15vh;
+    height: 20vw;
     /* background-color: blue; */
   }
 

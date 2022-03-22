@@ -6,11 +6,13 @@ header {
   display: flex;
   justify-content: space-evenly;
   width: 100vw;
+  font-size: 2vw;
   /* margin-bottom: 10vh; */
   /* background: lightgoldenrodyellow; */
 }
 
 .header-nav a {
+  font-family: GoodTimes;
   color: rgba(187, 107, 33, 0.856);
   text-decoration: none;
   transition: 1s;
@@ -23,7 +25,7 @@ h1 {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 4vw;
   color: rgb(255, 240, 226);
-  text-shadow: 2px 2px rgb(187, 107, 33);
+  /* text-shadow: 2px 2px rgb(187, 107, 33); */
 }
 
 .h1-div {
@@ -164,6 +166,9 @@ h1 {
   .header-nav {
     margin-bottom: 5vh;
   }
+  .header-nav {
+    font-size: 3vw;
+  }
   .h1-div {
     margin: 0;
     flex-direction: column;
@@ -183,7 +188,7 @@ h1 {
   }
 
   .name h1 {
-    font-size: 5vw;
+    font-size: 6vw;
     margin: 0;
     width: 26vw;
   }
@@ -239,9 +244,15 @@ h1 {
     width: 100%;
     /* background-color: green; */
   }
+  /* .header-nav {
+    font-size: 4vw;
+  } */
 }
 
 @media (max-width: 500px) {
+  .header-nav {
+    font-size: 4vw;
+  }
   .h1-div {
     height: 15vh;
     /* background-color: blue; */

@@ -1,10 +1,11 @@
 import React from "react";
+import { connect } from "react-redux";
 import "./Projects.css";
 
-function Projects () {
+function Projects ({skillsState}) {
     return (
         <div>
-            <div className="projects-title">Projects</div>
+            <div className={skillsState?"projects-title-move":"projects-title"}>Projects</div>
             <div >
                 <div className="projects">                    
                     <iframe src ="https://hilites.netlify.app/" title="latest soccer highlights">
@@ -27,4 +28,10 @@ function Projects () {
     )
 }
 
-export default Projects
+const mapStateToProps = (state) => {
+    return {
+        skillsState: state.skillsState
+    }
+}
+
+export default connect(mapStateToProps,{})(Projects)

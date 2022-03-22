@@ -1,7 +1,7 @@
 .projects iframe {
   width: 50vw;
   height: 50vw;
-  border-radius: 2vw;
+  border-radius: 1vw;
   border: none;
 }
 
@@ -22,10 +22,21 @@
 }
 
 .projects-title {
+  font-family: GoodTimes;
   text-align: center;
-  font-size: 5vw;
+  font-size: 3.5vw;
   color: rgb(175, 96, 28);
+  margin-top: 10vh;
   /* background: purple; */
+}
+
+.projects-title-move {
+  font-family: GoodTimes;
+  text-align: left;
+  font-size: 3.5vw;
+  color: rgb(175, 96, 28);
+  margin-top: 15vh;
+  margin-left: 25vw;
 }
 
 .projects a {
@@ -38,4 +49,46 @@
 
 .projects h3 {
   margin: 5vh;
+}
+
+@media (max-width: 1400px) {
+  .projects-title-move {
+    margin-top: 20vh;
+  }
+}
+@media (max-width: 1100px) {
+  .projects-title-move {
+    margin-top: 25vh;
+  }
+  .projects {
+  }
+}
+@media (max-width: 1000px) {
+  .projects-title {
+    font-size: 4vw;
+  }
+  .projects-title-move {
+    margin-top: 60vh;
+    margin-left: 0;
+    font-size: 4vw;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .projects-title {
+    font-size: 5vw;
+  }
+}
+@media (max-width: 650px) {
+  .projects-title-move {
+    margin-top: 50vh;
+  }
+}
+@media (max-width: 500px) {
+  .projects-title {
+    font-size: 6vw;
+  }
+  .projects-title-move {
+    margin-top: 40vh;
+  }
 }

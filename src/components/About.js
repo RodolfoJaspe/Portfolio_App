@@ -7,8 +7,7 @@ function About ({skillsState}) {
     return (
         <div className='about-container'>
             <div 
-                className="about-picture"
-                style={{justifyContent:skillsState?"flex-start":"center"}}>
+                className={skillsState?"about-picture-move":"about-picture"}>
                 <img src={bridge} alt="bridge"/>
             </div>
             <div className="bio">   

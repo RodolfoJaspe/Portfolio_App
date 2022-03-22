@@ -50,6 +50,9 @@
 }
 
 @media (max-width: 650px) {
+  .bio {
+    padding: 3vw 15vw;
+  }
   .about-container img {
     width: 40vw;
   }
@@ -62,6 +65,10 @@
 }
 
 @media (max-width: 500px) {
+  .bio {
+    padding: 3vw 10vw;
+  }
+
   .about-picture-move {
     margin-top: 100vw;
   }

@@ -112,11 +112,11 @@
 
 @media (max-width: 1000px) {
   .home {
-    margin-top: 30vw;
+    margin-top: 10vw;
   }
   .img-div-move {
     margin-bottom: 6vw;
-    margin-top: 25vw;
+    margin-top: 55vw;
     justify-content: center;
   }
   .home-projects iframe {
@@ -129,10 +129,8 @@
 }
 
 @media (max-width: 650px) {
-  .home {
-    margin-top: 45vw;
-  }
   .img-div-move {
+    margin-top: 70vw;
     margin-bottom: 5vw;
   }
 
@@ -147,14 +145,14 @@
 
 @media (max-width: 500px) {
   .home {
-    margin-top: 70vw;
+    margin-top: 0;
   }
   .home img {
     width: 40vw;
     height: 40vw;
   }
   .img-div-move {
-    margin-top: 30vw;
+    margin-top: 100vw;
   }
   .projects-container {
     flex-direction: column;

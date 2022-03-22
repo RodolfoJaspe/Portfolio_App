@@ -5,8 +5,9 @@ import "./Projects.css";
 function Projects ({skillsState}) {
     return (
         <div>
-            <div className={skillsState?"projects-title-move":"projects-title"}>Projects</div>
-            <div >
+            <div className={skillsState?"projects-title-move":"projects-title"}>Projects
+            </div>
+            <div className="projects-outer">
                 <div className="projects">                    
                     <iframe src ="https://hilites.netlify.app/" title="latest soccer highlights">
                     </iframe>

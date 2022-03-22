@@ -87,8 +87,11 @@
   .home {
     margin-top: 9vw;
   }
+  .img-div {
+    margin-bottom: 8vw;
+  }
   .img-div-move {
-    margin-bottom: 6vw;
+    margin-bottom: 8vw;
   }
 
   .home-projects iframe {
@@ -145,12 +148,13 @@
 
 @media (max-width: 500px) {
   .home {
-    margin-top: 0;
+    margin-top: 5vw;
   }
   .home img {
     width: 40vw;
     height: 40vw;
   }
+
   .img-div-move {
     margin-top: 100vw;
   }

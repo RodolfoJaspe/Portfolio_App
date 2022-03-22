@@ -257,6 +257,7 @@ h1 {
   }
   .h1-div {
     height: 20vw;
+    margin-top: 10vw;
     /* background-color: blue; */
   }
 

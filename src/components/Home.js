@@ -16,9 +16,15 @@ console.log(skillsState)
                        <img src= {headshot} alt="bridge" /> 
                 </div>
                 <div className="projects-container">
-                    <div className="home-projects">
-                        <iframe src ="https://hilites.netlify.app/" title="latest soccer highlights"></iframe>
-                        <a href="https://hilites.netlify.app/">Highlights</a>
+                    <div className="home-projects">                    
+                        <iframe src ="https://rdgroup-usa.com/" title="RD Group Consulting">
+                        </iframe>
+                        <a href="https://rdgroup-usa.com/">RD Group</a>
+                    </div>
+                    <div className="home-projects">                    
+                        <iframe src ="https://dayanamorales.com" title="Dayana Morales Actress Portfolio">
+                        </iframe>
+                        <a href="https://dayanamorales.com">Dayana Morales<br/>Actress Portfolio</a>
                     </div>
                     <div className="home-projects">
                         <iframe src ="https://toodue.netlify.app/" title="latest soccer highlights"></iframe>

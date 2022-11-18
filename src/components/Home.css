@@ -2,7 +2,6 @@
   display: flex;
   width: 75vw;
   justify-content: center;
-  /* background: blue; */
 }
 
 .img-div-move {
@@ -41,6 +40,7 @@
   /* background-color: aqua; */
   justify-content: space-evenly;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .home-projects {

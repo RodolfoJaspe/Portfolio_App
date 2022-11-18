@@ -9,6 +9,18 @@ function Projects ({skillsState}) {
             </div>
             <div className="projects-outer">
                 <div className="projects">                    
+                    <iframe src ="https://rdgroup-usa.com/" title="RD Group Consulting">
+                    </iframe>
+                    <a href="https://rdgroup-usa.com/"><h3>RD Group</h3></a>
+                    <p>RD Group, interior and exterior design architects</p>
+                </div>
+                <div className="projects">                    
+                    <iframe src ="https://dayanamorales.com" title="Dayana Morales Actress Portfolio">
+                    </iframe>
+                    <a href="https://dayanamorales.com"><h3>Dayana Morales Actress Portfolio</h3></a>
+                    <p>Portfolio page of Venezuelan actress Dayana Morales</p>
+                </div>
+                <div className="projects">                    
                     <iframe src ="https://hilites.netlify.app/" title="latest soccer highlights">
                     </iframe>
                     <a href="https://hilites.netlify.app/"><h3>Highlights</h3></a>

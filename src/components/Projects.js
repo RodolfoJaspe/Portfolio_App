@@ -5,8 +5,8 @@ import "./Projects.css";
 function Projects ({skillsState}) {
     return (
         <div>
-            <div className={skillsState?"projects-title-move":"projects-title"}>Projects
-            </div>
+            {/* <div className={skillsState?"projects-title-move":"projects-title"}>Projects
+            </div> */}
             <div className="projects-outer">
                 <div className="projects">                    
                     <iframe src ="https://rdgroup-usa.com/" title="RD Group Consulting">

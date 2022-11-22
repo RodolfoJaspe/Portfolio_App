@@ -10,7 +10,7 @@ function Header({skillsState, showSkills}) {
 
     return (
         <header> 
-            <div className="header-nav">
+            {/* <div className="header-nav">
                 <div className='linkedin-icon'>    
                     <a href='https://www.linkedin.com/in/rodolfo-jaspe/'>   <img src={linkedIn} alt='linkedin-icon'/>     
                     </a>
@@ -18,18 +18,19 @@ function Header({skillsState, showSkills}) {
                 <Link to="/">Home</Link>
                 <Link to= "/projects">Projects</Link>
                 <Link to="/about">About Me</Link>
-            </div>
-            <div className="h1-div">
+            </div> */}
+        <div className={!skillsState?"h1-div":"h1-div2"}>
                 <div className='name-title'>
-                    <div className='name'>
-                        <h1>Rodolfo Jaspe</h1>
-                    </div>
+                    <div className='title' onClick={()=>showSkills(skillsState)}>
+                        Full Stack Web Developer
+                    </div> 
                     <div style={{color:"red",marginLeft:"2vw",fontSize:"6vw"}}>
                         /
                     </div>
-                    <div className='title' onClick={()=>showSkills(skillsState)}>
-                        <h2>Full Stack Web Developer</h2>
-                    </div>  
+                    <h1 className ='name'>
+                        <div className='first-name'>Rodolfo</div>
+                        <div className='last-name'>Jaspe</div>
+                    </h1> 
                 </div>
                 {skillsState? <FadeIn transitionDuration="1000" className='skills-container'>
                     <h2>{'{'}</h2>

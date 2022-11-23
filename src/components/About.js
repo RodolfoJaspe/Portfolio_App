@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import bridge from "../Assets/bridge.jpg";
+import headshot from "../Assets/headshot.jpg";
 import "./About.css";
 
 function About ({skillsState}) {
@@ -8,7 +8,7 @@ function About ({skillsState}) {
         <div className='about-container'>
             <div 
                 className={skillsState?"about-picture-move":"about-picture"}>
-                <img src={bridge} alt="bridge"/>
+                <img src={headshot} alt="headshot"/>
             </div>
             <div className="bio">   
                 <p>

@@ -197,6 +197,23 @@ h1 {
   cursor: pointer;
 }
 
+.github-icon {
+    position: absolute;
+    left: 2vw;
+    top: 2vw;
+  }
+  
+  .github-icon img {
+    width: 4vw;
+    transition: 1s;
+  }
+  
+  .github-icon img:hover {
+    width: 5vw;
+    transition: 1s;
+    cursor: pointer;
+  }
+
 @media (max-width: 1000px) {
   .header-nav {
     margin-top: 0;
@@ -209,9 +226,13 @@ h1 {
     text-decoration: none;
   }
   .h1-div {
-    margin: 0;
     flex-direction: column;
     height: 10vw;
+    margin-top: 10vw;
+  }
+
+  .h1-div2 {
+    margin-top: 10vw;
   }
 
   .name-title {
@@ -256,6 +277,13 @@ h1 {
     width: 8vw;
   }
 
+  .github-icon img:hover {
+    width: 9vw;
+  }
+  .github-icon img {
+    width: 8vw;
+  }
+
   .linkedin-icon img:hover {
     width: 9vw;
   }
@@ -280,13 +308,18 @@ h1 {
 @media (max-width: 800px) {
   .h1-div {
     height: 20vw;
+    margin-top: 20vw;
     /* background-color: blue; */
+  }
+  .h1-div2 {
+    margin-top: 15vw;
   }
   .name h1 {
     font-size: 7vw;
     width: 100%;
     /* background-color: green; */
   }
+
 }
 
 @media (max-width: 500px) {
@@ -296,8 +329,10 @@ h1 {
   }
   .h1-div {
     height: 20vw;
-    margin-top: 10vw;
     /* background-color: blue; */
+  }
+  .h1-div2 {
+    margin-bottom: 90vw;
   }
 
   .title {

@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import './Header.css';
 import FadeIn from 'react-fade-in';
 import linkedIn from '../Assets/linkedin.png'
+import github from '../Assets/github.png'
 import { connect } from 'react-redux';
 import { showSkills } from '../actions'
 
@@ -19,6 +20,18 @@ function Header({skillsState, showSkills}) {
                 <Link to= "/projects">Projects</Link>
                 <Link to="/about">About Me</Link>
             </div> */}
+        <div className='linkedin-icon'>    
+            <a href='https://www.linkedin.com/in/rodolfo-jaspe/' target='_blank'>   
+                <img src={linkedIn} alt='linkedin-icon'
+                />     
+            </a>
+        </div>
+        <div className='github-icon'>    
+            <a href='https://github.com/RodolfoJaspe' target='_blank'>   
+                <img src={github} alt='github-icon'
+                />     
+            </a>
+        </div>
         <div className={!skillsState?"h1-div":"h1-div2"}>
                 <div className='name-title'>
                     <div className='title' onClick={()=>showSkills(skillsState)}>
